@@ -56,7 +56,7 @@ const Header: React.FC = () => {
             <div key={idx} className="relative group">
               <Link
                 href={link.href}
-                className="text-white hover:text-primary font-medium flex items-center gap-1 transition-colors duration-200 py-2"
+                className="text-white hover:text-secondary font-medium flex items-center gap-1 transition-colors duration-200 py-2"
               >
                 {link.name}
                 {link.submenu.length > 0 && <FiChevronDown className="ml-1" />}
