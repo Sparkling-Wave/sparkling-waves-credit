@@ -85,8 +85,6 @@ With:
 </div>
 ```
 
-**Note**: The title text now uses `text-secondary` class for consistent branding with the main page.
-
 ### 6. Update CardWithDate Props
 
 Add the `page` prop and remove the `link` prop:
@@ -176,27 +174,6 @@ export default ComponentName;
 ✅ **Module CSS Files Deleted**: All remaining `.module.css` files have been removed
 ✅ **Code Optimization**: Unused properties and API calls have been removed
 ✅ **Consistent Structure**: All files now follow the same clean, optimized pattern
-
-## Current Analytics Views Structure
-
-The main analytics page (`app/mtn-cloud-access/page.tsx`) now includes only the available views:
-
-### 1. **Loan Disbursement Analytics**
-
-- Total Gross Loan Disbursed
-- Total Net Loan Disbursed
-
-### 2. **Active Loans & Outstanding Amounts**
-
-- Active Loans
-- Total Gross Loan Outstanding
-
-### 3. **User & Platform Analytics**
-
-- App User Count
-- Average Loan Amount
-
-All views have been updated to use Tailwind CSS with consistent styling and the `text-secondary` class for titles.
 
 ## Benefits
 

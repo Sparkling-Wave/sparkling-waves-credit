@@ -29,7 +29,7 @@ const AnalyticsPage = () => {
     {
       title: "Loan Disbursement Analytics",
       description:
-        "Comprehensive overview of loan distribution and financial performance",
+        "Comprehensive overview of loan distribution and financial performance metrics",
       icon: FiTrendingUp,
       color: "from-primary-600 to-primary-800",
       components: [
@@ -44,15 +44,17 @@ const AnalyticsPage = () => {
       ],
     },
     {
-      title: "Active Loans & Borrowers",
-      description: "Real-time tracking of active loans and borrower engagement",
+      title: "Active Loans & Outstanding Amounts",
+      description:
+        "Real-time tracking of active loans and outstanding loan amounts",
       icon: FiUsers,
       color: "from-green-600 to-green-800",
       components: [{ component: ActiveLoansPage, title: "Active Loans" }],
     },
     {
       title: "User & Platform Analytics",
-      description: "App usage statistics and user engagement metrics",
+      description:
+        "App usage statistics, user engagement, and loan amount metrics",
       icon: FiSmartphone,
       color: "from-orange-600 to-orange-800",
       components: [
@@ -94,7 +96,7 @@ const AnalyticsPage = () => {
 
       {/* Analytics Content */}
       <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-12">
+        <div className="container mx-auto">
           <div className="space-y-12">
             {analyticsSections.map((section, sectionIndex) => (
               <div
@@ -111,12 +113,12 @@ const AnalyticsPage = () => {
                   }}
                 >
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                      <section.icon className="w-6 h-6" />
-                    </div>
+                    {/* <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                      {section.icon && <section.icon className="w-6 h-6" />}
+                    </div> */}
                     <h2 className="text-2xl font-bold">{section.title}</h2>
                   </div>
-                  <p className="text-gray-100 text-lg">{section.description}</p>
+                  <p className="text-gray-600 text-lg">{section.description}</p>
                 </div>
 
                 {/* Section Content */}
@@ -158,31 +160,25 @@ const AnalyticsPage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 icon: FiTrendingUp,
-                label: "Total Loans",
+                label: "Loan Disbursement",
                 value: "Active",
                 color: "text-green-600",
               },
               {
                 icon: FiUsers,
-                label: "Active Borrowers",
+                label: "App Users",
                 value: "Growing",
                 color: "text-blue-600",
               },
               {
-                icon: FiCheckCircle,
-                label: "Success Rate",
-                value: "High",
+                icon: FiDollarSign,
+                label: "Loan Analytics",
+                value: "Comprehensive",
                 color: "text-primary-600",
-              },
-              {
-                icon: FiBarChart,
-                label: "Performance",
-                value: "Excellent",
-                color: "text-purple-600",
               },
             ].map((stat, index) => (
               <div
