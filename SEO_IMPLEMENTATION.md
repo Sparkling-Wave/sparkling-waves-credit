@@ -60,6 +60,12 @@ Each page has its own `layout.tsx` file with specific metadata optimized for its
 - **Keywords**: company policy, business philosophy, customer-centric approach, investor assurance, employee empowerment, sustainable practices
 - **Description**: Company policy and core values overview
 
+#### Analytics Page (`app/analytics/layout.tsx`)
+
+- **Title**: "Analytics Dashboard - Sparkling Wave Investment Company Limited | Loan Performance Metrics"
+- **Keywords**: analytics dashboard, loan performance, borrower analytics, financial metrics, loan disbursement, risk management
+- **Description**: Comprehensive analytics dashboard for loan performance and financial metrics
+
 #### Loans Directory (`app/loans/layout.tsx`)
 
 - **Title**: "Loan Services - Business, Asset & Cash Loans in Nigeria | Sparkling Wave Investment"
