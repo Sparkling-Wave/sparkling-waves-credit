@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import InternetCheck from "@/utils/InternetChecker";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -82,6 +83,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto.className}>
         <div className="min-h-screen flex flex-col">
+          <InternetCheck />
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />

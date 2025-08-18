@@ -100,7 +100,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden p-2 text-gray-700 hover:text-primary transition-colors duration-200"
+          className="lg:hidden p-2 text-white hover:text-primary transition-colors duration-200"
           onClick={toggleMobileMenu}
         >
           {mobileMenuOpen ? (
